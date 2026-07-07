@@ -7,34 +7,35 @@
 class Crab < Formula
   desc "Serverless git remote helper — repositories in cloud object storage"
   homepage "https://crab.build"
-  version "1.0.6"
+  version "1.0.7"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.6/crab-darwin-aarch64.tar.gz"
-      sha256 "b094b28c45ecd8940ece849310fb75c7c6cf9456852c78d183f3d75184447682"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-darwin-aarch64.tar.gz"
+      sha256 "6d397500314ad56b7ddec7e073dcac14faf55c24a7f4ac0f69b31c584ff2f541"
     end
     on_intel do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.6/crab-darwin-x86_64.tar.gz"
-      sha256 "a028ad7eb76c74fe62764aeeafe9fd16d330e457782a73d372d4637ab5f775b8"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-darwin-x86_64.tar.gz"
+      sha256 "aca1a6fa54116874397e01fe1123135995147c39f3c27d961c26d77977b7dc46"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.6/crab-linux-aarch64.tar.gz"
-      sha256 "d615f7fd6fa9b3f18fd17d3696456c6fb5a81dc9c48b94cf35888a61522599ab"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-linux-aarch64.tar.gz"
+      sha256 "b7b34852635346de9e305969df3b423d0a909574388c1cd8d0ab41b79a6a7c11"
     end
     on_intel do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.6/crab-linux-x86_64.tar.gz"
-      sha256 "6da445069f145f3304c98667194d4798d49a7c3b6ec8d0c7b1c6430585cf5f9d"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-linux-x86_64.tar.gz"
+      sha256 "bae35b9867d4f9167776aa693418bfc548384905051b122713ed4e25aa9e86a7"
     end
   end
 
   def install
     bin.install "crab"
-    bin.install "crab-fuse-mount" if OS.mac?
+    bin.install "crab-nfs-mount"
+    bin.install "crab-fuse-mount"
     bin.install_symlink "crab" => "git-remote-crab"
   end
 
