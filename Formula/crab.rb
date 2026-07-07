@@ -13,29 +13,29 @@ class Crab < Formula
   on_macos do
     on_arm do
       url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-darwin-aarch64.tar.gz"
-      sha256 "6d397500314ad56b7ddec7e073dcac14faf55c24a7f4ac0f69b31c584ff2f541"
+      sha256 "166386c7d08644f777bc1e5c23615837aa4b86cc00616e978c57deb9d5f68c86"
     end
     on_intel do
       url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-darwin-x86_64.tar.gz"
-      sha256 "aca1a6fa54116874397e01fe1123135995147c39f3c27d961c26d77977b7dc46"
+      sha256 "63364b299b5a6714c277b353f6f3bd19def8c02c875f684f5da11176b8984833"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-linux-aarch64.tar.gz"
-      sha256 "b7b34852635346de9e305969df3b423d0a909574388c1cd8d0ab41b79a6a7c11"
+      sha256 "586ba3f390f2152c87aa974d1bf3a7c4133ff096140321697c7c3c37046a6f6d"
     end
     on_intel do
       url "https://github.com/crabbuild/crab-release/releases/download/v1.0.7/crab-linux-x86_64.tar.gz"
-      sha256 "bae35b9867d4f9167776aa693418bfc548384905051b122713ed4e25aa9e86a7"
+      sha256 "5a9aa5fbabe363a584b3448ddaf85ab8855a3e609d9b413f3e3569cf2a68dd67"
     end
   end
 
   def install
     bin.install "crab"
-    bin.install "crab-nfs-mount"
     bin.install "crab-fuse-mount"
+    bin.install_symlink "crab" => "crab-nfs-mount"
     bin.install_symlink "crab" => "git-remote-crab"
   end
 
