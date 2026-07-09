@@ -7,28 +7,28 @@
 class Crab < Formula
   desc "Serverless git remote helper — repositories in cloud object storage"
   homepage "https://crab.build"
-  version "1.0.9"
+  version "1.0.10"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.9/crab-darwin-aarch64.tar.gz"
-      sha256 "ddd5dee6e6b24fd59d0466054ded9859c9a03c11015bdfeafc20cf5a8b8025a9"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.10/crab-darwin-aarch64.tar.gz"
+      sha256 "c56f5150bd21ca64730636c73a96b2168661996ee83a72a7b37d416f42ae6529"
     end
     on_intel do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.9/crab-darwin-x86_64.tar.gz"
-      sha256 "e69f95fca46ab96d790f206fbe8a2a8434cf775bb2ee2dc058b3da93aa0504e8"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.10/crab-darwin-x86_64.tar.gz"
+      sha256 "e09ed3a548d51eab546b172be4e91d757c99fc63c62bf08bb34c4a2752c3b306"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.9/crab-linux-aarch64.tar.gz"
-      sha256 "1f234415c97cd8214c20170a4289a7b3a9fb8330045752ac38f3fe7a9e46cc4c"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.10/crab-linux-aarch64.tar.gz"
+      sha256 "200c11aa60e5cde6df0e1c6ee742d77ffb10a2404ef609be4b6d9a5d5f33167a"
     end
     on_intel do
-      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.9/crab-linux-x86_64.tar.gz"
-      sha256 "aa68fcea5baad2c1ff782f616f5bfb57a6b88f80bf033986d3c24248dfc65d6e"
+      url "https://github.com/crabbuild/crab-release/releases/download/v1.0.10/crab-linux-x86_64.tar.gz"
+      sha256 "5e03b99ef92b4d14c321adc5eafb1b4b5d636d3d0f48311461676af3b0b1bdec"
     end
   end
 
