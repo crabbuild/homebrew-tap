@@ -1,31 +1,32 @@
 class Trail < Formula
   desc "Local-first operation database for code and text worktrees."
   homepage "https://github.com/crabbuild/trail"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/crabbuild/trail/releases/download/v0.1.0/trail-aarch64-apple-darwin.tar.xz"
-      sha256 "a26e539b0116d5b9f9958b6b097fe7f25efd1acf9a76104278c556778bd7dfca"
+      url "https://github.com/crabbuild/trail/releases/download/v0.1.1/trail-aarch64-apple-darwin.tar.xz"
+      sha256 "fb83d313700bac2aa6d2a0c35b2dbb02793c33628f3a62c4ab7c4b69904acd19"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crabbuild/trail/releases/download/v0.1.0/trail-x86_64-apple-darwin.tar.xz"
-      sha256 "617d0857e8723f80f885deb0f85fda5ee88516c5fca47bd523137f4b9847ca06"
+      url "https://github.com/crabbuild/trail/releases/download/v0.1.1/trail-x86_64-apple-darwin.tar.xz"
+      sha256 "c105b2f1c7fe2c7425c2a44f891c0e70e997cdf71655a6d1f5befe8b67fcbe7b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/crabbuild/trail/releases/download/v0.1.0/trail-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "df33a4ff3e7af1c42c8c2b30c4ce7d5b67ec42bac9129c6cb1677bfda0f8a3bf"
+      url "https://github.com/crabbuild/trail/releases/download/v0.1.1/trail-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7e6138077ae85dd4961899c0759431b332fbdf6fc8b6d4e528584bd5ef84021b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crabbuild/trail/releases/download/v0.1.0/trail-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "877bc3d3f64d4f45606e5c0f8f0f15cc116a6cba7525d20be670687135edf7e8"
+      url "https://github.com/crabbuild/trail/releases/download/v0.1.1/trail-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2a14cd49055de1f494f7437b25734ecef26b5ca98bd498f7c2363487fd36279f"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin": {},
+    "aarch64-pc-windows-gnu": {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin": {},
     "x86_64-pc-windows-gnu": {},
