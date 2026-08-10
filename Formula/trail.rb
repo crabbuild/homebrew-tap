@@ -1,25 +1,25 @@
 class Trail < Formula
   desc "Local-first operation database for code and text worktrees."
   homepage "https://github.com/crabbuild/trail"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/crabbuild/trail/releases/download/v0.2.0/trail-aarch64-apple-darwin.tar.xz"
-      sha256 "440f24291a6f4086c0bc8cd52279b5f53f927747efa495288404e84efd8031ee"
+      url "https://github.com/crabbuild/trail/releases/download/v0.3.0/trail-aarch64-apple-darwin.tar.xz"
+      sha256 "4d00f6891d2288afaab3f9487f09b7329031c331051dc779ab71a98f94afcf1e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crabbuild/trail/releases/download/v0.2.0/trail-x86_64-apple-darwin.tar.xz"
-      sha256 "5b4ef4b3c967782c7c9fa8382339d31a9bc7c205848de4860348d114766621cf"
+      url "https://github.com/crabbuild/trail/releases/download/v0.3.0/trail-x86_64-apple-darwin.tar.xz"
+      sha256 "0a21556b630a9f823ecfaedb5973c9ebf8f45bfc239d18c984a75d9a0586f278"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/crabbuild/trail/releases/download/v0.2.0/trail-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "88f4856f81ac6119746b20916023d547fdffc3f5140608890e70195982e3b680"
+      url "https://github.com/crabbuild/trail/releases/download/v0.3.0/trail-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "038dd883cf48473e808e8ac94702708225fe78f52213ef3efe014debfa92bce1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crabbuild/trail/releases/download/v0.2.0/trail-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "21740bf61633dd33c79f9084f64aeecb7a678e39cce9ee284a6e30958044823f"
+      url "https://github.com/crabbuild/trail/releases/download/v0.3.0/trail-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "45624975bdcfa497798d6592053f3cf281fe9c32674fa2d4c294047c997b9908"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
