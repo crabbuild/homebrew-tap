@@ -11,23 +11,23 @@ class Crab < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/crabbuild/crab/releases/download/v1.1.0/crab-darwin-aarch64.tar.gz"
-      sha256 "6f237f1322a63350b0b82004aba0744b0de080e50f3733be38ea12fb088ef2c1"
+      url "https://github.com/crabbuild/crab/releases/download/v1.0.0/crab-darwin-aarch64.tar.gz"
+      sha256 "3d88f1750c02930e5128904deeedd5800b4aa244c7d59a46f4d20d275dd15827"
     end
     on_intel do
-      url "https://github.com/crabbuild/crab/releases/download/v1.1.0/crab-darwin-x86_64.tar.gz"
-      sha256 "85089176da46e50038b4efdbedc87aebaa843a496888d2e69ababcd000bb1a86"
+      url "https://github.com/crabbuild/crab/releases/download/v1.0.0/crab-darwin-x86_64.tar.gz"
+      sha256 "c0af1914a1c7f96f045c0a2ffdd545b63fe9c00e37bfcafe481ad3ab39a59755"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/crabbuild/crab/releases/download/v1.1.0/crab-linux-aarch64.tar.gz"
-      sha256 "25e5dbfb58356b10bb057abb6850f75f216f1d4422d11e4d0155e8c051feb8e4"
+      url "https://github.com/crabbuild/crab/releases/download/v1.0.0/crab-linux-aarch64.tar.gz"
+      sha256 "3b69a1f9295433ea0956c8c8eecf907c32115749ea860b8bc27994ce98c2bc23"
     end
     on_intel do
-      url "https://github.com/crabbuild/crab/releases/download/v1.1.0/crab-linux-x86_64.tar.gz"
-      sha256 "256afac7990bc1ce0085ab1cb2bb415ea7266dec8c1b8a3c0f22b1d6ddd8e8a9"
+      url "https://github.com/crabbuild/crab/releases/download/v1.0.0/crab-linux-x86_64.tar.gz"
+      sha256 "256445415a9efb957633044590646629ae1df3929b020540e01950d8b02620cb"
     end
   end
 
