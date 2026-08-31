@@ -7,7 +7,6 @@
 class Crab < Formula
   desc "Serverless git remote helper — repositories in cloud object storage"
   homepage "https://crab.build"
-  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
